@@ -30,7 +30,7 @@ local function create_terminal(command)
 end
 
 function M.setup()
-  vim.api.nvim_create_user_command("cmd", function(opts)
+  vim.api.nvim_create_user_command("Cmd", function(opts)
     create_terminal(opts.args)
   end, { nargs = "+" })
 
